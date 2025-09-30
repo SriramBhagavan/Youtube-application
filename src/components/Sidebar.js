@@ -10,7 +10,7 @@ import {
   Trophy, 
   Utensils, 
   Clock 
-} from "lucide-react"; // nice lightweight icons
+} from "lucide-react";
 
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
@@ -19,7 +19,7 @@ const Sidebar = () => {
 
   return (
     <div className="col-span-1 w-56 p-4 bg-white shadow-md h-screen sticky top-0 overflow-y-auto rounded-2xl">
-      {/* Main Menu */}
+      
       <ul className="space-y-3">
         <li>
           <Link
@@ -44,7 +44,7 @@ const Sidebar = () => {
         </li>
       </ul>
 
-      {/* Subscriptions */}
+      
       <h1 className="font-bold text-gray-700 mt-6 mb-2 text-sm uppercase">
         Subscriptions
       </h1>
@@ -67,7 +67,7 @@ const Sidebar = () => {
         </li>
       </ul>
 
-      {/* Watch Later */}
+    
       <h1 className="font-bold text-gray-700 mt-6 mb-2 text-sm uppercase">
         Watch Later
       </h1>

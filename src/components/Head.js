@@ -51,7 +51,7 @@ const Head = () => {
 
   return (
     <div className="grid grid-flow-col p-4 px-6 items-center shadow-md bg-white sticky top-0 z-50">
-      {/* Left section */}
+      
       <div className="flex col-span-1 items-center space-x-4">
         <img
           onClick={toggleMenuHandler}
@@ -68,7 +68,7 @@ const Head = () => {
         </a>
       </div>
 
-      {/* Middle search bar */}
+      
       <div className="col-span-10 flex justify-center relative">
         <div className="flex w-2/3 md:w-1/2">
           <input
@@ -85,7 +85,7 @@ const Head = () => {
           </button>
         </div>
 
-        {/* Suggestions dropdown */}
+      
         {showSuggestions && suggestions.length > 0 && (
           <div className="absolute top-12 w-2/3 md:w-1/2 bg-white shadow-xl rounded-lg border border-gray-200 overflow-hidden">
             <ul>
@@ -104,7 +104,7 @@ const Head = () => {
         )}
       </div>
 
-      {/* Right user icon */}
+      
       <div className="col-span-1 flex justify-end">
         <img
           className="h-8 w-8 rounded-full cursor-pointer hover:scale-105 transition-transform"

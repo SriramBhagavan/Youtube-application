@@ -11,7 +11,7 @@ const chatMessages=useSelector((store)=>store.chat.messages);
     useEffect(()=>{
         
         const i=setInterval(()=>{
-            //console.log("API polling");
+            
             dispatch(addMessage({
                 name:generateRandomName(),
                 message:generateRandomString(20),
